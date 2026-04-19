@@ -1,6 +1,6 @@
 import streamlit as st
 
-# --- 🟢 MOTOR DE CÁLCULO "INVISIBLE" (OFUSCADO) ---
+# --- 🟢 MOTOR DE CÁLCULO ---
 _cln = lambda x: (x.strip().replace(" ", "") if x.strip().replace(" ", "").startswith('#') else '#'+x.strip().replace(" ", ""))[:7].ljust(7,'0')
 _h2r = lambda x: tuple(int(x.lstrip('#')[i:i+2], 16) for i in (0, 2, 4))
 _r2h = lambda x: '#%02x%02x%02x' % x
